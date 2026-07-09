@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Electronic Inc - Save Our Contacts</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0f0a;
+    background-image:
+      linear-gradient(rgba(124,252,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124,252,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #baffc9;
+    min-height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+  h1 {
+    color: #7CFC00;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(124,252,0,0.5);
+    margin-bottom: 8px;
+  }
+  .tagline {
+    color: #7fae7f;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    color: #9fd89f;
+    margin-top: 20px;
+    font-size: 1.05em;
+  }
+  .contacts {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .card {
+    background: linear-gradient(135deg, #111a11 0%, #0e150e 100%);
+    border: 1px solid #2a4a2a;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 0 1px rgba(124,252,0,0.05) inset;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); border-color: #4d9c4d; }
+  .name {
+    color: #7CFC00;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .role {
+    color: #7fae7f;
+    font-size: 0.85em;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+  }
+  .info {
+    color: #9fd89f;
+    font-size: 0.9em;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .info a { color: inherit; text-decoration: none; }
+  .info a:hover { color: #7CFC00; }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    padding: 13px;
+    background: #7CFC00;
+    color: #0a0f0a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    transition: background 0.15s;
+  }
+  .btn:hover, .btn:active { background: #9fff33; }
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #4d9c4d;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+  footer a { color: #7CFC00; text-decoration: none; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>ECO ELECTRONIC INC.</h1>
+    <div class="tagline">WHOLESALE CONSUMER ELECTRONICS</div>
+    <div class="subtitle">Tap to save a contact</div>
+  </header>
+
+  <div class="contacts">
+    <div class="card">
+      <div class="name">Othman Othman</div>
+      <div class="role">Eco Electronic Inc</div>
+      <div class="info">📞 <a href="tel:+14699997133">(469) 999-7133</a></div>
+      <div class="info">✉️ <a href="mailto:Othman@ecoelectronic.net">Othman@ecoelectronic.net</a></div>
+      <a class="btn" href="othman.vcf" download>Save Contact</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Omar Othman</div>
+      <div class="role">Eco Electronic Inc</div>
+      <div class="info">📞 <a href="tel:+12148628207">(214) 862-8207</a></div>
+      <div class="info">✉️ <a href="mailto:Omar@ecoelectronic.net">Omar@ecoelectronic.net</a></div>
+      <a class="btn" href="omar.vcf" download>Save Contact</a>
+    </div>
+
+    <div class="card">
+      <div class="name">Adham Othman</div>
+      <div class="role">Eco Electronic Inc</div>
+      <div class="info">📞 <a href="tel:+19189823084">(918) 982-3084</a></div>
+      <div class="info">✉️ <a href="mailto:Adham@ecoelectronic.net">Adham@ecoelectronic.net</a></div>
+      <a class="btn" href="adham.vcf" download>Save Contact</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://ecoelectronic.net">ecoelectronic.net</a>
+  </footer>
+</body>
+</html>
